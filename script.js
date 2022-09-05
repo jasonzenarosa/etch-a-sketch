@@ -17,3 +17,10 @@ pixels.forEach((pixel) => {
         pixel.classList.add('activated');
     });
 });
+
+const clear = document.querySelector('.clear');
+clear.addEventListener('click', () => {
+    pixels.forEach((pixel) => {
+        pixel.classList.remove('activated');
+    });
+});

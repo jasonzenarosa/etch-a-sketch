@@ -1,11 +1,38 @@
 * {
     box-sizing: border-box;
+    font-family: monospace;
+    /* border: 1px solid red; */
 }
 
-/* etch a sketch canvas */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 900;
+
+}
+
+.canvas-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     width: min-content;
     border: 1px solid black;
+    margin-bottom: 40px;
 }
 
 .row {
@@ -13,8 +40,8 @@
 }
 
 .pixel {
-    height: 30px;
     width: 30px;
+    height: 30px;
     border: 1px solid black;
 }
 .pixel:hover {
@@ -23,4 +50,13 @@
 
 .activated, .activated.pixel:hover {
     background-color: mediumseagreen;
+}
+
+.footer-container {
+    height: 60px;
+    display: flex;
+    background-color: mediumseagreen;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
