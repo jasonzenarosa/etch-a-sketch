@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+/* etch a sketch canvas */
+.container {
+    width: min-content;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.pixel {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+}
+.pixel:hover {
+    background-color: lightgreen;
+}
+
+.activated, .activated.pixel:hover {
+    background-color: mediumseagreen;
+}
