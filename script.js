@@ -13,8 +13,13 @@ for (let i = 0; i < 16; i++) {
 
 const pixels = document.querySelectorAll('.pixel');
 pixels.forEach((pixel) => {
-    pixel.addEventListener('click', () => {
-        pixel.classList.add('activated');
+    pixel.addEventListener('click', (e) => {
+        
+        if (pixel.classList[1] === 'activated') {
+            pixel.classList.remove('activated')
+        } else {
+            pixel.classList.add('activated');
+        }
     });
 });
 
